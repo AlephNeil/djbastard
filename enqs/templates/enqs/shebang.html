@@ -1,0 +1,35 @@
+{% extends 'enqs/layout.html' %}
+
+{% load bootstrap %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="{% static 'enqs/table.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Row</th>
+        <th>Date</th>
+        <th>Caller</th>
+        <th>Phone</th>
+        <th>Details</th>
+        <th>Who For</th>
+        <th>Response</th>
+        <th>Remarks</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+  </table>
+  <tbody>
+    {% for enq in enquiries %}
+
+    {% endfor %}
+  </tbody>
+{% endblock %}
